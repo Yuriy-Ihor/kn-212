@@ -43,6 +43,7 @@ header{
     letter-spacing: 1px;
     padding: 10px 8px 6px 8px;
     border-bottom: 4px solid white;
+    cursor: pointer;
 }
 #navbar-ul li:hover{
     background-color: black;
@@ -168,6 +169,14 @@ section{
     color: black;
     text-transform: uppercase;
     border: none;
+    font-family: "Open Sans";
+    cursor: pointer;
+    transition: 0.3s;
+}
+#section-newsletter-button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
 }
 #section-quotes{
     max-width: 1140px;
