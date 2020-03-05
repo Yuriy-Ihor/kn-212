@@ -1,7 +1,14 @@
 body{
 	margin: auto;
-    font-family: "Open Sans";
+    font-family: "Scada";
     cursor: default;
+}
+
+@font-face {
+    font-family: 'Audiowide', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rambla', sans-serif;
+    font-family: 'Scada', sans-serif;
 }
 
 /*-------Header-------*/
