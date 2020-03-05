@@ -255,7 +255,6 @@ section{
     max-height: 480px;
 }
 
-
 /*-----Footer-----*/
 footer{
     max-width: 1140px;
@@ -267,6 +266,7 @@ footer{
 }
 #footer-ul{
     list-style: none;
+    padding: 0;
     flex-wrap: wrap;
 }
 #footer-ul > li{
@@ -293,6 +293,7 @@ footer{
     align-items: center;
     list-style: none;
     margin-top: 50px;
+    padding: 0;
 }
 .footer-media{
     height: 40px;
