@@ -1,0 +1,29 @@
+@media (min-width: 540px){
+    .section-top-name{
+        font-size: 60px;
+    }
+    #section-newsletter-text{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 910px){
+    #navbar{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+}
+
+@media(max-width: 470px){
+    #navbar-logo{
+        font-size: 40px;
+        margin: 30px auto 20px auto;
+    }
+    #navbar-ul{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
