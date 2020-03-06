@@ -1,6 +1,6 @@
 body{
 	margin: auto;
-    font-family: "Scada";
+    font-family: "Open Sans";
     cursor: default;
 }
 
@@ -29,6 +29,7 @@ header{
     color: black;
     font-weight: 500;
     font-size: 60px;
+    font-family: "Exo 2";
     transition-duration: 0.5s;
 }
 #navbar-logo:hover{
@@ -203,6 +204,7 @@ section{
 }
 #section-quotes-top > li{
     margin: 0 30px;
+    font-family: "Scada";
     display: block;
     text-transform: uppercase;
     font-weight: bold;
