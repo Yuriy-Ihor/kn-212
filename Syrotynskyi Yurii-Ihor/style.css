@@ -277,7 +277,40 @@ section{
     text-align: center;
     background-color: black;
     color: white;
-    height: 50px;
+    height: 10vh;
+}
+#section-form{
+    margin-top: 50px;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.section-form-text-input{
+    height: 30px;
+}
+.section-form-phone-input{
+    height: 30px;
+}
+#section-form-notes{
+    height: 60px;
+}
+#section-form-subscribe-type{
+    height: 30px;
+    color: black;
+}
+#section-form-submit{
+    text-transform: uppercase;
+    padding: 6px 10px;
+    width: 100%;
+    max-width: 100px;
+    max-height: 30px;
+    background-color: gold;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    border: none;
+    align-self: center;
 }
 
 /*-----Footer-----*/

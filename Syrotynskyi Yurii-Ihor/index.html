@@ -101,12 +101,15 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
 
             </th>
             <th>
+                <i class="fas fa-baby"></i>
                 Basic
             </th>
             <th>
+                <i class="fas fa-male"></i>
                 Pro
             </th>
             <th>
+                <i class="fas fa-space-shuttle"></i>
                 Ultimate
             </th>
         </tr>
@@ -115,13 +118,13 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
                 Price per month
             </td>
             <td class="section-table-item">
-                4$
+                <b>4</b> <i class="fas fa-dollar-sign"></i>
             </td>
             <td class="section-table-item">
-                15$
+                <b>15</b> <i class="fas fa-dollar-sign"></i>
             </td>
             <td class="section-table-item">
-                20$
+                <b>20</b> <i class="fas fa-dollar-sign"></i>
             </td>
         </tr>
         <tr class="section-table-row">
@@ -143,7 +146,7 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
                 Max photo resolution
             </td>
             <td class="section-table-item">
-                1920x1080
+                1920 x 1080
             </td>
             <td class="section-table-item">
                 2048 × 1080
@@ -154,6 +157,30 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
         </tr>
 
     </table>
+
+    <form id="section-form">
+        <input class="section-form-text-input" type="text" id="fname" name="fname" placeholder="Your first name" />
+        <br />
+        <input class="section-form-text-input" type="text" id="lname" name="lname" placeholder="Your last name" />
+        <br />
+        <input class="section-form-text-input" type="text" id="email" name="email" placeholder="E-mail" />
+        <br />
+        <input class="section-form-phone-input" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{12}" placeholder="Phone number" />
+        <small>Format: 380123456789</small>
+        <br />
+        <label for="other">Subscribe type:</label>
+        <select id="section-form-subscribe-type" name="subscribe-type">
+            <option value="volvo">Basic</option>
+            <option value="saab">Pro</option>
+            <option value="fiat">ULtimate</option>
+        </select>
+        <br />
+
+        <label for="other">Notes</label>
+        <textarea id="section-form-notes" name="form-notes"></textarea>
+        <br />
+        <input id="section-form-submit" type="submit" value="Submit" />
+    </form>
 </section>
 
 <footer>
