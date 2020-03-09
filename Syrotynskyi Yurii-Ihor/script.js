@@ -46,6 +46,7 @@ function CheckMail(){
     else
     {
         alert("Incorrect email!");
+        return false;
     }
 }
 
