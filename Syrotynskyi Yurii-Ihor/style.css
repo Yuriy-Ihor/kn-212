@@ -35,20 +35,18 @@ header{
     max-width: 1140px;
     margin: 0 auto;
 }
- 
-
 #navbar-ul-dropdown-list {
-    font-size: 16px;  
+    font-size: 18px;  
     border: none;
     outline: none;
     background-color: inherit;
     font-family: inherit;
     padding: 0 !important;
-    transition: 0s;
+    transition: 0.3s;
 }
 #navbar-ul-dropdown-list:hover{
     background-color: white !important;
-    transition: 0s;
+    transition: 0.3s;
 }
 #navbar-ul-dropdown-button{
     font-size: inherit;  
@@ -81,7 +79,6 @@ header{
 #navbar-ul-dropdown-list:hover #navbar-ul-dropdown-content {
     display: block;
 }
-
 #navbar-logo{
     color: black;
     font-weight: 500;
@@ -190,6 +187,7 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 .section-mid-column{
     display: flex;
