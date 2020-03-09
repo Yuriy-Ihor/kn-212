@@ -10,7 +10,6 @@
 @media(max-width: 910px){
     #navbar{
         flex-direction: column;
-        padding: 10px 0;
     }
 }
 
@@ -25,6 +24,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+    #main-header{
+        margin-top: 140px;
     }
     .section-top-post-text{
         font-size: 13px;
