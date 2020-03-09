@@ -6,6 +6,7 @@
 	<title>stockphotos.net</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="media.css" />
+    <script type="text/javascript" src="script.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Audiowide|Exo+2|Rambla|Scada' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />	
 </head>
@@ -39,7 +40,6 @@
 </header>
 
 <section>
-
     <div id="section-top">
         <div id="section-top-post">
             <div class="section-top-post-name">A wide variety of worthy content</div>
@@ -163,7 +163,7 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
 
     </table>
 
-    <form id="section-form">
+    <form id="section-form" action="#" method="post" onsubmit="CheckForm(); return false">
         <input class="section-form-text-input" type="text" id="fname" name="fname" placeholder="Your first name" />
         <br />
         <input class="section-form-text-input" type="text" id="lname" name="lname" placeholder="Your last name" />
@@ -180,7 +180,6 @@ consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
             <option value="fiat">ULtimate</option>
         </select>
         <br />
-
         <label for="other">Notes</label>
         <textarea id="section-form-notes" name="form-notes"></textarea>
         <br />

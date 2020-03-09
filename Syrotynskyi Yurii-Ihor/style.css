@@ -42,11 +42,9 @@ header{
     background-color: inherit;
     font-family: inherit;
     padding: 0 !important;
-    transition: 0.3s;
 }
 #navbar-ul-dropdown-list:hover{
     background-color: white !important;
-    transition: 0.3s;
 }
 #navbar-ul-dropdown-button{
     font-size: inherit;  
