@@ -65,3 +65,8 @@ function IsLetter(value){
 function IsNumber(value){
     return !isNaN(value);
 }
+
+
+window.addEventListener('scroll', function() {
+    arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
