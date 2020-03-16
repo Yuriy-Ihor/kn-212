@@ -67,6 +67,19 @@ function IsNumber(value){
 }
 
 
+var selectElement = document.getElementById('section-form-subscribe-type');
+
+selectElement.addEventListener('change', (event) =>
+{
+    if(event.target.value == "Trial"){
+        alert("Warning: trial period is available only for 2 weeks!")
+    }
+});
+
+arrowTop.onclick = function() {
+    window.scrollTo(pageXOffset, 0);
+  };
+
 window.addEventListener('scroll', function() {
     arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
 });

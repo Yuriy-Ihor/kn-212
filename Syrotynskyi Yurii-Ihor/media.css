@@ -38,6 +38,10 @@
         font-size: 25px;
         line-height: 32px;
     }
+    .section-table-item{
+        font-size: 13px;
+        padding: 0;
+    }
 }
 
 @media(max-width: 940px){
