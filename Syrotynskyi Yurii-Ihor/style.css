@@ -51,6 +51,7 @@ header{
     background-color: inherit;
     font-family: inherit;
     padding: 0 !important;
+    cursor: pointer;
 }
 #navbar-ul-dropdown-list:hover{
     background-color: white !important;
@@ -70,6 +71,7 @@ header{
     text-transform: inherit;
     font-weight: inherit;
     color: black;
+    cursor: pointer;
 }
 #navbar-ul-dropdown-content {
     display: none;
@@ -91,13 +93,13 @@ header{
     font-weight: 500;
     font-size: 60px;
     font-family: "Exo 2";
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
-#navbar-logo:hover{
+/* #navbar-logo:hover{
     color: white;
     background-color: red;
     transition-duration: 0.5s;
-}
+} */
 #navbar-ul{
     margin: 0;
     padding: 0;
