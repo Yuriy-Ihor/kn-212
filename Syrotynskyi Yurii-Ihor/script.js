@@ -66,7 +66,7 @@ function IsNumber(value){
     return !isNaN(value);
 }
 
-/*--- event ---*/
+/*--- events ---*/
 
 var sectionSelect = document.getElementById('section-form-subscribe-type');
 
@@ -75,7 +75,6 @@ sectionSelect.addEventListener('change', (event) => {
         alert("Warning: trial period is available only for 2 weeks!")
     }
 });
-
 
 window.addEventListener('scroll', ControlArrowTop());
 arrowTop.onclick = function() {
@@ -90,16 +89,22 @@ var logo = document.getElementById('navbar-logo');
 logo.addEventListener('click', function() {
     RandomizeColor(logo);
 } );
-
 function RandomizeColor(element){
     element.style.color = GetRandomColor();
 }
 
-function GetRandomColor() {
+function GetRandomColor(){
     var letters = '0123456789ABCDEF';
     var color = '#';
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-  }
+}
+
+/*--- dark/light mode ---*/
+
+function SwitchPageMode(){
+    document.getElementById('navbar-light-button').classList.toggle('hide');
+    document.getElementById('navbar-dark-button').classList.toggle('hide');
+}
