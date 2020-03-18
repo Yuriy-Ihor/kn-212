@@ -111,12 +111,24 @@ function SwitchPageToLightMode(){
 
     document.getElementById('navbar').classList.toggle('dark-mode');
     document.getElementById('navbar-logo').classList.toggle('dark-mode');
-    var elements = document.getElementsByClassName('navbar-ul-element');
-    for(let i = 0; i < elements.length; i++){
-        elements[i].classList.toggle('dark-mode');
+    var navbarElements = document.getElementsByClassName('navbar-ul-element');
+    for(let i = 0; i < navbarElements.length; i++){
+        navbarElements[i].classList.toggle('dark-mode');
     }
     document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
     document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
+
+    document.getElementById('section-top-post-name').classList.toggle('dark-mode');
+
+    var sectionPostTexts = document.getElementsByClassName('section-top-post-text');
+    for(let i = 0; i < sectionPostTexts.length; i++){
+        sectionPostTexts[i].classList.toggle('dark-mode');
+    }
+
+    var sectionTopNames = document.getElementsByClassName('section-top-name');
+    for(let i = 0; i < sectionTopNames.length; i++){
+        sectionTopNames[i].classList.toggle('dark-mode');
+    }
 }
 
 function SwitchPageToDarkMode(){
@@ -126,10 +138,22 @@ function SwitchPageToDarkMode(){
 
     document.getElementById('navbar').classList.toggle('dark-mode');
     document.getElementById('navbar-logo').classList.toggle('dark-mode');
-    var elements = document.getElementsByClassName('navbar-ul-element');
-    for(let i = 0; i < elements.length; i++){
-        elements[i].classList.toggle('dark-mode');
+    var navbarElements = document.getElementsByClassName('navbar-ul-element');
+    for(let i = 0; i < navbarElements.length; i++){
+        navbarElements[i].classList.toggle('dark-mode');
     }
     document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
     document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
+
+    document.getElementById('section-top-post-name').classList.toggle('dark-mode');
+
+    var sectionPostTexts = document.getElementsByClassName('section-top-post-text');
+    for(let i = 0; i < sectionPostTexts.length; i++){
+        sectionPostTexts[i].classList.toggle('dark-mode');
+    }
+
+    var sectionTopNames = document.getElementsByClassName('section-top-name');
+    for(let i = 0; i < sectionTopNames.length; i++){
+        sectionTopNames[i].classList.toggle('dark-mode');
+    }
 }
