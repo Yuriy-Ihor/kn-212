@@ -104,7 +104,32 @@ function GetRandomColor(){
 
 /*--- dark/light mode ---*/
 
-function SwitchPageMode(){
+function SwitchPageToLightMode(){
     document.getElementById('navbar-light-button').classList.toggle('hide');
     document.getElementById('navbar-dark-button').classList.toggle('hide');
+    document.body.style.backgroundColor = 'white';
+
+    document.getElementById('navbar').classList.toggle('dark-mode');
+    document.getElementById('navbar-logo').classList.toggle('dark-mode');
+    var elements = document.getElementsByClassName('navbar-ul-element');
+    for(let i = 0; i < elements.length; i++){
+        elements[i].classList.toggle('dark-mode');
+    }
+    document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
+    document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
+}
+
+function SwitchPageToDarkMode(){
+    document.getElementById('navbar-light-button').classList.toggle('hide');
+    document.getElementById('navbar-dark-button').classList.toggle('hide');
+    document.body.style.backgroundColor = 'black';
+
+    document.getElementById('navbar').classList.toggle('dark-mode');
+    document.getElementById('navbar-logo').classList.toggle('dark-mode');
+    var elements = document.getElementsByClassName('navbar-ul-element');
+    for(let i = 0; i < elements.length; i++){
+        elements[i].classList.toggle('dark-mode');
+    }
+    document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
+    document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
 }

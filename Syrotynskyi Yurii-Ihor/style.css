@@ -61,14 +61,13 @@ body{
 }
 
 #navbar-dark-button{
-    background-color: gold;
     color: white;
-    border-bottom-color: gold;
+    border-bottom-color: black;
 }
 #navbar-dark-button:hover{
     background-color: white;
-    color: gold;
-    border-bottom-color: gold;
+    color: black;
+    border-bottom-color: white;
 }
 
 #navbar{
@@ -488,4 +487,33 @@ footer{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/*--- dark mode ---*/
+
+.dark-mode#navbar{
+    background-color: black;
+    color: white;
+}
+.dark-mode#navbar-logo{
+    color: white;
+}
+.dark-mode.chosen{
+    border-bottom-color: white !important;
+}
+.dark-mode.navbar-ul-element{
+    border-bottom-color: black;
+}
+.dark-mode.navbar-ul-element:hover{
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
+.dark-mode#navbar-ul-dropdown-button{
+    background-color: black;
+    color: white;
+}
+.dark-mode#navbar-ul-dropdown-content > a{
+    color: white;
+    background-color: black;
 }
