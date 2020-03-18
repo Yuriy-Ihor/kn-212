@@ -104,88 +104,60 @@ function GetRandomColor(){
 
 /*--- dark/light mode ---*/
 
+var sectionTableItems = document.getElementsByClassName('section-table-item');
+var sectionTopNames = document.getElementsByClassName('section-top-name');
+var sectionPostTexts = document.getElementsByClassName('section-top-post-text');
+var navbarElements = document.getElementsByClassName('navbar-ul-element');
+var formTexts = document.getElementsByClassName('form-text');
+
 function SwitchPageToLightMode(){
-    document.getElementById('navbar-light-button').classList.toggle('hide');
-    document.getElementById('navbar-dark-button').classList.toggle('hide');
     document.body.style.backgroundColor = 'white';
-
-    document.getElementById('navbar').classList.toggle('dark-mode');
-    document.getElementById('navbar-logo').classList.toggle('dark-mode');
-    var navbarElements = document.getElementsByClassName('navbar-ul-element');
-    for(let i = 0; i < navbarElements.length; i++){
-        navbarElements[i].classList.toggle('dark-mode');
-    }
-    document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
-    document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
-
-    document.getElementById('section-top-post-name').classList.toggle('dark-mode');
-
-    var sectionPostTexts = document.getElementsByClassName('section-top-post-text');
-    for(let i = 0; i < sectionPostTexts.length; i++){
-        sectionPostTexts[i].classList.toggle('dark-mode');
-    }
-
-    var sectionTopNames = document.getElementsByClassName('section-top-name');
-    for(let i = 0; i < sectionTopNames.length; i++){
-        sectionTopNames[i].classList.toggle('dark-mode');
-    }
-
-    document.getElementById("section-table").classList.toggle('dark-mode');
-
-    var sectionTableItems = document.getElementsByClassName('section-table-item');
-    for(let i = 0; i < sectionTableItems.length; i++){
-        sectionTableItems[i].classList.toggle('dark-mode');
-    }
-
-    var formTexts = document.getElementsByClassName('form-text');
-    for(let i = 0; i < formTexts.length; i++){
-        formTexts[i].classList.toggle('dark-mode');
-    }
-
-    document.getElementById("section-quotes").classList.toggle('dark-mode');
-    document.getElementById("footer-ul").classList.toggle('dark-mode');
-    document.getElementById("footer-text").classList.toggle('dark-mode');
+    ToggleDarkMode();
+    ToggleForModeSwitchingButtons();
 }
 
 function SwitchPageToDarkMode(){
+    document.body.style.backgroundColor = 'black';
+    ToggleDarkMode();
+    ToggleForModeSwitchingButtons();
+}
+
+function ToggleForModeSwitchingButtons(){
     document.getElementById('navbar-light-button').classList.toggle('hide');
     document.getElementById('navbar-dark-button').classList.toggle('hide');
-    document.body.style.backgroundColor = 'black';
+}
 
+function ToggleDarkMode(){
+    ToggleDarkModeForIds();
+    ToggleDarkModeClasses();    
+}
+
+function ToggleDarkModeForIds(){
     document.getElementById('navbar').classList.toggle('dark-mode');
     document.getElementById('navbar-logo').classList.toggle('dark-mode');
-    var navbarElements = document.getElementsByClassName('navbar-ul-element');
-    for(let i = 0; i < navbarElements.length; i++){
-        navbarElements[i].classList.toggle('dark-mode');
-    }
     document.getElementById('navbar-ul-dropdown-button').classList.toggle('dark-mode');
     document.getElementById('navbar-ul-dropdown-content').classList.toggle('dark-mode');
-
     document.getElementById('section-top-post-name').classList.toggle('dark-mode');
-
-    var sectionPostTexts = document.getElementsByClassName('section-top-post-text');
-    for(let i = 0; i < sectionPostTexts.length; i++){
-        sectionPostTexts[i].classList.toggle('dark-mode');
-    }
-
-    var sectionTopNames = document.getElementsByClassName('section-top-name');
-    for(let i = 0; i < sectionTopNames.length; i++){
-        sectionTopNames[i].classList.toggle('dark-mode');
-    }
-
-    document.getElementById("section-table").classList.toggle('dark-mode');
-
-    var sectionTableItems = document.getElementsByClassName('section-table-item');
-    for(let i = 0; i < sectionTableItems.length; i++){
-        sectionTableItems[i].classList.toggle('dark-mode');
-    }
-
-    var formTexts = document.getElementsByClassName('form-text');
-    for(let i = 0; i < formTexts.length; i++){
-        formTexts[i].classList.toggle('dark-mode');
-    }
-
     document.getElementById("section-quotes").classList.toggle('dark-mode');
     document.getElementById("footer-ul").classList.toggle('dark-mode');
     document.getElementById("footer-text").classList.toggle('dark-mode');
+    document.getElementById("section-table").classList.toggle('dark-mode');
+}
+
+function ToggleDarkModeClasses(){
+    for(let i = 0; i < navbarElements.length; i++){
+        navbarElements[i].classList.toggle('dark-mode');
+    }
+    for(let i = 0; i < sectionPostTexts.length; i++){
+        sectionPostTexts[i].classList.toggle('dark-mode');
+    }
+    for(let i = 0; i < sectionTopNames.length; i++){
+        sectionTopNames[i].classList.toggle('dark-mode');
+    }
+    for(let i = 0; i < sectionTableItems.length; i++){
+        sectionTableItems[i].classList.toggle('dark-mode');
+    }
+    for(let i = 0; i < formTexts.length; i++){
+        formTexts[i].classList.toggle('dark-mode');
+    }
 }
