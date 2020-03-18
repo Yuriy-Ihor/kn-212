@@ -129,6 +129,16 @@ function SwitchPageToLightMode(){
     for(let i = 0; i < sectionTopNames.length; i++){
         sectionTopNames[i].classList.toggle('dark-mode');
     }
+
+    document.getElementById("section-table").classList.toggle('dark-mode');
+    var sectionTableItems = document.getElementsByClassName('section-table-item');
+    for(let i = 0; i < sectionTableItems.length; i++){
+        sectionTableItems[i].classList.toggle('dark-mode');
+    }
+
+    document.getElementById("section-quotes").classList.toggle('dark-mode');
+    document.getElementById("footer-ul").classList.toggle('dark-mode');
+    document.getElementById("footer-text").classList.toggle('dark-mode');
 }
 
 function SwitchPageToDarkMode(){
@@ -156,4 +166,14 @@ function SwitchPageToDarkMode(){
     for(let i = 0; i < sectionTopNames.length; i++){
         sectionTopNames[i].classList.toggle('dark-mode');
     }
+
+    document.getElementById("section-table").classList.toggle('dark-mode');
+    var sectionTableItems = document.getElementsByClassName('section-table-item');
+    for(let i = 0; i < sectionTableItems.length; i++){
+        sectionTableItems[i].classList.toggle('dark-mode');
+    }
+
+    document.getElementById("section-quotes").classList.toggle('dark-mode');
+    document.getElementById("footer-ul").classList.toggle('dark-mode');
+    document.getElementById("footer-text").classList.toggle('dark-mode');
 }

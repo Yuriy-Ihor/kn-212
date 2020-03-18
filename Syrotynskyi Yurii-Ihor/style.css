@@ -526,3 +526,27 @@ footer{
 .dark-mode.section-top-name{
     color: white;
 }
+.dark-mode#section-quotes{
+    color: white;
+}
+.dark-mode#section-table{
+    color: white;
+    background-color: black;
+}
+.dark-mode.section-table-item{
+    background-color: white;
+    color: black
+}
+.dark-mode#footer-ul{
+    color: white;
+}
+.dark-mode#footer-ul > li{
+    color: white;
+    border-bottom-color: black;
+}
+.dark-mode#footer-ul > li:hover{
+    border-bottom-color: white;
+}
+.dark-mode#footer-text{
+    color: white;
+}
