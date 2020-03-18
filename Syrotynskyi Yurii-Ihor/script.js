@@ -142,6 +142,7 @@ function ToggleDarkModeForIds(){
     document.getElementById("footer-ul").classList.toggle('dark-mode');
     document.getElementById("footer-text").classList.toggle('dark-mode');
     document.getElementById("section-table").classList.toggle('dark-mode');
+    document.getElementById("section-form").classList.toggle('dark-mode');
 }
 
 function ToggleDarkModeClasses(){
