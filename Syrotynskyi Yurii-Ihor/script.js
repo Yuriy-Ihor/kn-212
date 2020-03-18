@@ -131,9 +131,15 @@ function SwitchPageToLightMode(){
     }
 
     document.getElementById("section-table").classList.toggle('dark-mode');
+
     var sectionTableItems = document.getElementsByClassName('section-table-item');
     for(let i = 0; i < sectionTableItems.length; i++){
         sectionTableItems[i].classList.toggle('dark-mode');
+    }
+
+    var formTexts = document.getElementsByClassName('form-text');
+    for(let i = 0; i < formTexts.length; i++){
+        formTexts[i].classList.toggle('dark-mode');
     }
 
     document.getElementById("section-quotes").classList.toggle('dark-mode');
@@ -168,9 +174,15 @@ function SwitchPageToDarkMode(){
     }
 
     document.getElementById("section-table").classList.toggle('dark-mode');
+
     var sectionTableItems = document.getElementsByClassName('section-table-item');
     for(let i = 0; i < sectionTableItems.length; i++){
         sectionTableItems[i].classList.toggle('dark-mode');
+    }
+
+    var formTexts = document.getElementsByClassName('form-text');
+    for(let i = 0; i < formTexts.length; i++){
+        formTexts[i].classList.toggle('dark-mode');
     }
 
     document.getElementById("section-quotes").classList.toggle('dark-mode');

@@ -537,6 +537,9 @@ footer{
     background-color: white;
     color: black
 }
+.dark-mode.form-text{
+    color: white;
+}
 .dark-mode#footer-ul{
     color: white;
 }
