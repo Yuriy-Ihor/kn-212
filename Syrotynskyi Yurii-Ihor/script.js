@@ -76,14 +76,13 @@ sectionSelect.addEventListener('change', (event) => {
     }
 });
 
-window.addEventListener('scroll', ControlArrowTop());
+window.addEventListener('scroll', function (){
+    arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
+
 arrowTop.onclick = function() {
     window.scrollTo(pageXOffset, 0);
   };
-
-function ControlArrowTop(){
-    arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
-}
 
 var logo = document.getElementById('navbar-logo');
 logo.addEventListener('click', function() {
