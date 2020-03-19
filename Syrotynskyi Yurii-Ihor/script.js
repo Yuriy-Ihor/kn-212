@@ -114,12 +114,14 @@ function SwitchPageToLightMode(){
     document.body.style.backgroundColor = 'white';
     ToggleDarkMode();
     ToggleForModeSwitchingButtons();
+    ChangeImagesToLight();
 }
 
 function SwitchPageToDarkMode(){
     document.body.style.backgroundColor = 'black';
     ToggleDarkMode();
     ToggleForModeSwitchingButtons();
+    ChangeImagesToDark();
 }
 
 function ToggleForModeSwitchingButtons(){
@@ -132,6 +134,23 @@ function ToggleDarkMode(){
     ToggleDarkModeClasses();    
 }
 
+function ChangeImagesToDark(){
+    document.getElementById('main-header-image').src = './images/blackFamily.jpg';
+    document.getElementById('section-top-image').src = './images/outsideParty.jpg';
+    document.getElementById('section-img1').src = './images/ny.jpg';
+    document.getElementById('section-img2').src = './images/deer.jpg';
+    document.getElementById('section-category-img1').src = './images/yachtInSea.jpg';
+}
+
+function ChangeImagesToLight(){
+    document.getElementById('main-header-image').src = './images/whiteFamily.jpg';
+    document.getElementById('section-top-image').src = './images/nature.jpg';
+    document.getElementById('section-img1').src = './images/humanInNY.jpg';
+    document.getElementById('section-img2').src = './images/bike.jpg';
+    document.getElementById('section-category-img1').src = './images/girl.jpg';
+}
+
+
 function ToggleDarkModeForIds(){
     document.getElementById('navbar').classList.toggle('dark-mode');
     document.getElementById('navbar-logo').classList.toggle('dark-mode');
@@ -143,6 +162,7 @@ function ToggleDarkModeForIds(){
     document.getElementById("footer-text").classList.toggle('dark-mode');
     document.getElementById("section-table").classList.toggle('dark-mode');
     document.getElementById("section-form").classList.toggle('dark-mode');
+    document.getElementById("arrowTop").classList.toggle('dark-mode');
 }
 
 function ToggleDarkModeClasses(){
